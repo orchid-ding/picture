@@ -1,1 +1,73 @@
-<mxfile host="www.draw.io" modified="2020-02-02T10:08:40.710Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" version="12.6.2" etag="P03Q2-DzAtQuJ3HVMKlL" type="github"><diagram id="M08GcQSR7RY03P3L_5uE">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-02-02T10:29:42.700Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="ngVhYqPC5TlX64XDL3TW" version="12.6.2" type="github">
+  <diagram id="M08GcQSR7RY03P3L_5uE" name="Page-1">
+    <mxGraphModel dx="597" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-1" value="kafka cluster&amp;nbsp;&lt;br&gt;Offsets（存储在kafka 或者 zookeeper）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="51" y="60" width="369" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-7" value="1. 监控kafka集群的offstes（offstes 在zk或者kafka上维护时）" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="9BE9D2VLHe62JwfElPJm-5" target="9BE9D2VLHe62JwfElPJm-1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-5" value="aKafkaOffsetMonitor-assembly-0.2.0" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="290" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-9" value="2. 调用api获取kafka监控的json数据" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="9BE9D2VLHe62JwfElPJm-5">
+          <mxGeometry x="0.3333" y="-14" relative="1" as="geometry">
+            <mxPoint x="236" y="280" as="sourcePoint"/>
+            <Array as="points">
+              <mxPoint x="236" y="270"/>
+              <mxPoint x="236" y="270"/>
+            </Array>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-12" value="3. 获取数据发送到小米开源监控软件OpenFaIcon" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9BE9D2VLHe62JwfElPJm-8">
+          <mxGeometry x="-0.6739" y="34" relative="1" as="geometry">
+            <mxPoint x="240" y="370" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="236" y="360"/>
+              <mxPoint x="232" y="360"/>
+              <mxPoint x="232" y="370"/>
+            </Array>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-8" value="Application(自己写的脚本文件)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="122.75" y="260" width="184.5" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-10" value="Kafka监控方案" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry width="170" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9BE9D2VLHe62JwfElPJm-13" target="9BE9D2VLHe62JwfElPJm-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="365" y="380"/>
+              <mxPoint x="365" y="210"/>
+              <mxPoint x="485" y="210"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-13" value="OpenFaIcon" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="140" y="360" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-16" value="4. 指定报警规则，实现触发报警" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="9BE9D2VLHe62JwfElPJm-13">
+          <mxGeometry x="-0.1064" y="40" relative="1" as="geometry">
+            <mxPoint x="230" y="420" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="260" y="400"/>
+              <mxPoint x="310" y="400"/>
+              <mxPoint x="310" y="450"/>
+              <mxPoint x="230" y="450"/>
+            </Array>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9BE9D2VLHe62JwfElPJm-17" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="230" width="30" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
